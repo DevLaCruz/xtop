@@ -1,0 +1,18 @@
+{
+    "name": "devlacruz/xtop",
+    "description": "Xtop framework verion 1",
+    "type": "framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Xtop\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alejandro De La Cruz",
+            "email": "97196517+DevLaCruz@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
