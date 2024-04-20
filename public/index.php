@@ -15,16 +15,9 @@ $router->post('/test', function () {
 });
 
 try {
-    $action = $router->resolve();
-    print($action);
+    $action = $router->resolve($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
+    print($action());
 } catch (HttpNotFoundException $e) {
     print('Not Found');
     http_response_code(404);
 }
-
-$action = $router->resolve();
-print($action());
-
-echo '<pre>';
-var_dump($router);
-echo '</pre>';

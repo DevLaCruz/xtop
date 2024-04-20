@@ -5,7 +5,15 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Xtop\\": "src/"
+            "Xtop\\": "src/Xtop"
+        }
+    },
+    "scripts": {
+        "tests":"phpunit --color=always --testdox tests/"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xtop\\Tests\\": "tests"
         }
     },
     "authors": [
@@ -14,5 +22,7 @@
             "email": "97196517+DevLaCruz@users.noreply.github.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    }
 }
